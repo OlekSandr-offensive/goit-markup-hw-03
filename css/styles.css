@@ -9,6 +9,7 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -20,10 +21,29 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 50px 0 188px 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 /* logo */
@@ -78,8 +98,13 @@ p {
 }
 
 /* hero */
-.hero-tittle {
+.hero {
   background: var(--background-dark-color);
+  padding: 200px 0;
+}
+
+.hero-tittle {
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -91,6 +116,8 @@ p {
 /* futures */
 .feature-list {
   list-style: none;
+  padding: 0;
+  margin: 94px 0;
 }
 
 .feature-list .tittle {
@@ -114,6 +141,8 @@ p {
 /* team */
 .team-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .team-list .tittle {
@@ -141,8 +170,10 @@ p {
 
 /* batton */
 .button {
+  display: inline-block;
   border-radius: 4px;
-  padding: 10px 32px 10px 32px;
+  padding: 10px 32px;
+  min-width: 200px;
 
   color: var(--primary-white-color);
   background-color: var(--akcent-color);
@@ -156,6 +187,8 @@ p {
 
 .buttons {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .click {
@@ -185,6 +218,8 @@ p {
 
 .section-tittle {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .picture {
