@@ -24,6 +24,7 @@ p {
   margin-top: 10px;
 }
 
+/* utilits */
 .list {
   list-style: none;
   padding: 0;
@@ -45,6 +46,13 @@ h3 {
   outline: 2px solid tomato;
 }
 
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
 /* logo */
 .logo {
   color: var(--akcent-color);
@@ -64,7 +72,24 @@ h3 {
 }
 
 /* site-nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--tittle-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -82,7 +107,19 @@ h3 {
   color: var(--akcent-color);
 }
 
+.site-contact {
+  display: flex;
+}
+
+.site-contact .item + .item {
+  margin-left: 50px;
+}
+
 .site-contact .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
