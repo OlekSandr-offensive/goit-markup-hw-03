@@ -42,6 +42,10 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 p,
 h1,
 h2,
@@ -55,7 +59,7 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* header */
@@ -171,13 +175,15 @@ h3 {
 .feature-list {
   list-style: none;
   padding: 0;
-  margin: 94px 0;
+  margin: 0;
   display: flex;
   align-items: center;
 }
 
-.section .task {
+.task {
   background: var(--background-task-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .feature-item {
@@ -260,8 +266,15 @@ h3 {
 .team-list .team-item + .team-item {
   margin-left: 30px;
 }
+
 .team {
   margin-bottom: 50px;
+}
+
+.team-item {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .group {
@@ -303,6 +316,17 @@ h3 {
 .click {
   background: var(--background-white-color);
   color: var(--tittle-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  display: inline-block;
+  border-style: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  outline: transparent;
 }
 
 .click:hover,
@@ -314,6 +338,16 @@ h3 {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.snap {
+  display: flex;
+  margin: 0 auto 50px;
+  justify-content: center;
+}
+
+.snap .snap-item + .snap-item {
+  margin-left: 8px;
 }
 
 /* hero portfolio */
@@ -335,10 +369,21 @@ h3 {
   line-height: 2;
   letter-spacing: 0.03em;
 }
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* footer */
 .footer {
   background: var(--background-dark-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .tittle {
