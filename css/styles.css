@@ -356,6 +356,12 @@ h3 {
 }
 
 /* hero portfolio */
+.rage-header {
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
 .section-tittle .caption {
   color: var(--tittle-text-color);
   font-weight: 700;
